@@ -17,5 +17,6 @@ Assignment : Object Modelling for Animal
 solution:
 -attached class daigram for assignment.
 -Test cases under test folder for each problem
-- PrintSolution class display the result for each mentioned questions in assignment pdf.
+-Section A Test cases ChickenTest, DuckTest, ParrotTest
+- PrintSolution stand lone class display the result for each mentioned questions results     in assignment pdf.
 
