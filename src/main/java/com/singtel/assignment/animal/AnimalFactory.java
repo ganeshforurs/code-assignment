@@ -4,6 +4,8 @@ import com.singtel.assignment.animal.bird.Bird;
 import com.singtel.assignment.animal.bird.Chicken;
 import com.singtel.assignment.animal.bird.Duck;
 import com.singtel.assignment.animal.bird.Parrot;
+import com.singtel.assignment.animal.fish.ClownFish;
+import com.singtel.assignment.animal.fish.Shark;
 import com.singtel.assignment.utils.AnimalTypeEnum;
 import com.singtel.assignment.utils.NeighbourTypeEnum;
 
@@ -42,6 +44,11 @@ public class AnimalFactory {
                 return new Parrot(NeighbourTypeEnum.DUCK);
             case PARROT_NEAR_PHONE:
                 return new Parrot(NeighbourTypeEnum.PHONE);
+            case SHARK:
+                return new Shark();
+            case CLOWN_FISH:
+                return new ClownFish();
+            case DOLPHIN:
             default:
                 return null;
         }

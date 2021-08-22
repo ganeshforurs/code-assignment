@@ -4,7 +4,11 @@ import com.singtel.assignment.animal.bird.Bird;
 import com.singtel.assignment.animal.bird.Chicken;
 import com.singtel.assignment.animal.bird.Duck;
 import com.singtel.assignment.animal.bird.Parrot;
+import com.singtel.assignment.animal.fish.ClownFish;
+import com.singtel.assignment.animal.fish.Shark;
+import com.singtel.assignment.utils.Color;
 import com.singtel.assignment.utils.NeighbourTypeEnum;
+import com.singtel.assignment.utils.Size;
 
 public class PrintSolution {
 
@@ -44,5 +48,24 @@ public class PrintSolution {
 
         Parrot parrot4=  new Parrot(NeighbourTypeEnum.DUCK);
         parrot4.sing();
+
+        //Question B
+        System.out.println("Question4 output:");
+        System.out.println("Question5 output:");
+        Shark shark = new Shark();
+        shark.setColor(Color.GREY);
+        shark.setSize(Size.LARGE);
+        shark.eatFish();
+        System.out.println("Size:"+shark.getSize());
+        System.out.println("Color:"+shark.getColor());
+
+        ClownFish clownFish = new ClownFish();
+        clownFish.setColor(Color.ORANGE);
+        clownFish.setSize(Size.SMALL);
+        clownFish.joke();
+        System.out.println("Size:"+clownFish.getSize());
+        System.out.println("Color:"+clownFish.getColor());
+
+
     }
 }

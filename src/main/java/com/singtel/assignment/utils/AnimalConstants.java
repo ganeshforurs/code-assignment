@@ -16,5 +16,8 @@ public  class AnimalConstants {
     public static final String PHONE_SOUND = "Ring, Ring";
     public static final String DOG_SOUND = "Woof, woof";
     public static final String CAT_SOUND = "Meow";
+    public static final String JOKING = "I am Joking";
+    public static final String EATING_OTHER_FISH = "I am eating other fish";
+
 
 }
