@@ -1,11 +1,14 @@
 package com.singtel.assignment;
 
+import com.singtel.assignment.animal.AnimalFactory;
+import com.singtel.assignment.animal.IAnimal;
 import com.singtel.assignment.animal.bird.Bird;
 import com.singtel.assignment.animal.bird.Chicken;
 import com.singtel.assignment.animal.bird.Duck;
 import com.singtel.assignment.animal.bird.Parrot;
 import com.singtel.assignment.animal.fish.ClownFish;
 import com.singtel.assignment.animal.fish.Shark;
+import com.singtel.assignment.utils.AnimalTypeEnum;
 import com.singtel.assignment.utils.Color;
 import com.singtel.assignment.utils.NeighbourTypeEnum;
 import com.singtel.assignment.utils.Size;
@@ -66,6 +69,19 @@ public class PrintSolution {
         System.out.println("Size:"+clownFish.getSize());
         System.out.println("Color:"+clownFish.getColor());
 
+        //Section D solution
+        AnimalFactory animalFactory = new AnimalFactory();
+        IAnimal[] animals = new IAnimal[]{
+                animalFactory.createAnimal(AnimalTypeEnum.DUCK),
+                animalFactory.createAnimal(AnimalTypeEnum.CHICKEN),
+                animalFactory.createAnimal(AnimalTypeEnum.ROOSTER),
+                animalFactory.createAnimal(AnimalTypeEnum.FISH),
+                animalFactory.createAnimal(AnimalTypeEnum.SHARK),
+                animalFactory.createAnimal(AnimalTypeEnum.CLOWN_FISH),
+                animalFactory.createAnimal(AnimalTypeEnum.DOLPHIN),
+                animalFactory.createAnimal(AnimalTypeEnum.BUTTERFLY)
+        };
+        CountingAnimals.countEachAnimalType(animals);
 
     }
 }
