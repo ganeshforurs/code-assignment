@@ -15,7 +15,6 @@ Project Details
 Assignment : Object Modelling for Animal
 
 solution:
--attached class daigram for assignment.
 -Test cases under test folder for each problem
 -Section A Test cases ChickenTest, DuckTest, ParrotTest are passed
 -Section B Test cases ClownFishTest, DolphinTest, SharkTest are passed
