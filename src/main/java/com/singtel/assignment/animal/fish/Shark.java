@@ -2,6 +2,7 @@ package com.singtel.assignment.animal.fish;
 
 import com.singtel.assignment.animal.ICarnivouros;
 import com.singtel.assignment.utils.AnimalConstants;
+import com.singtel.assignment.utils.AnimalTypeEnum;
 import com.singtel.assignment.utils.Color;
 import com.singtel.assignment.utils.Size;
 
@@ -10,6 +11,7 @@ public class Shark extends Fish implements ICarnivouros {
     public Shark() {
         this.setSize(Size.LARGE);
         this.setColor(Color.GREY);
+        this.setName(AnimalTypeEnum.SHARK.name());
     }
 
     @Override

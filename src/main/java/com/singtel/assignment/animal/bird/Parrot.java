@@ -17,9 +17,16 @@ public class Parrot extends Bird implements IFlyable, IWalkable, ISingable {
     public Parrot() {
 
     }
+    public Parrot(String name){
+        this.setName(name);
+    }
 
     public Parrot(NeighbourTypeEnum animalFriendType) {
         this.setNeighbourType(animalFriendType);
+    }
+    public Parrot(NeighbourTypeEnum animalFriendType, String name) {
+        this.setNeighbourType(animalFriendType);
+        this.setName(name);
     }
 
     public NeighbourTypeEnum getNeighbourType() {

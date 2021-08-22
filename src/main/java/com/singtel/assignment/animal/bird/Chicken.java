@@ -15,9 +15,22 @@ public class Chicken extends Bird implements IWalkable, ISingable {
     private Map<String, String> sounds= new HashMap<>();
     public Chicken() {
     }
-
     public Chicken(boolean isMale) {
         this.setMale(isMale);
+        if(this.isMale()) {
+            this.setLanguageCode("Danish");
+        }
+    }
+
+    public Chicken(boolean isMale, String name) {
+        this.setMale(isMale);
+        this.setName(name);
+        if(this.isMale()){
+            this.setLanguageCode("Danish");
+            this.setName(name);
+            sounds.clear();
+            generateRoosterSounds();
+        }
     }
 
     @Override

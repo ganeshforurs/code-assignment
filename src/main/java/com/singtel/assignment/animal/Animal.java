@@ -26,6 +26,8 @@ public class Animal implements IAnimal{
 
     private String languageCode;
 
+    private String name;
+
     public void walk(){
         System.out.println(AnimalConstants.WALKING);
     }

@@ -14,6 +14,9 @@ public class Duck extends Bird implements IWalkable, ISingable, ISwimmable {
 
     public Duck() {
     }
+    public Duck(String name){
+        this.setName(name);
+    }
 
     @Override
     public void sing() {
